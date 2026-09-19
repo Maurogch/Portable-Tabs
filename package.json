@@ -1,0 +1,52 @@
+{
+    "name": "portable-tabs",
+    "displayName": "Portable Tabs",
+    "description": "Automatically preserves VS Code editor tabs when a workspace is moved or renamed.",
+    "version": "0.1.0",
+    "publisher": "maurogch",
+    "license": "SEE LICENSE IN LICENSE",
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#0B2A63",
+        "theme": "dark"
+    },
+    "pricing": "Free",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "tabs",
+        "portable",
+        "workspace",
+        "editor",
+        "session",
+        "restore"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "portableTabs.save",
+                "title": "Portable Tabs: Save Now"
+            },
+            {
+                "command": "portableTabs.restore",
+                "title": "Portable Tabs: Restore Now"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Maurogch/Portable-Tabs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Maurogch/Portable-Tabs/issues"
+    },
+    "homepage": "https://github.com/Maurogch/Portable-Tabs"
+}
